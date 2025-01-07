@@ -13,7 +13,7 @@ class CoffeePrefs extends StatelessWidget {
             Text("3"),
             Image.asset('assets/img/coffee_bean.png',
               width: 25,
-            
+
             ),
             SizedBox(width: 50,),
             
