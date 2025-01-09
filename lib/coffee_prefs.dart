@@ -1,4 +1,5 @@
 import 'package:coffee_card/styled_body_text.dart';
+import 'package:coffee_card/styled_button.dart';
 import 'package:flutter/material.dart';
 
 class CoffeePrefs extends StatefulWidget {
@@ -40,15 +41,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
                 ),
 
             const Expanded(child: SizedBox(width: 50,)),
-            FilledButton(
-              style: FilledButton.styleFrom(
-                backgroundColor: Colors.brown,
-                foregroundColor: Colors.white
-
-              ),
-              onPressed: increaseStrength,
-              child: const Text("+"),
-            )
+            StyledButton(onPressed: increaseStrength, child: const Text("+")),
             
           ],
         ),
@@ -64,14 +57,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
                 colorBlendMode: BlendMode.multiply,
               ),
            const Expanded(child: SizedBox(width: 50,)),
-           FilledButton(
-            style: FilledButton.styleFrom(
-              foregroundColor: Colors.white,
-              backgroundColor: Colors.brown
-            ),
-            onPressed: increaseSugars,
-            child: const Text("+")
-           )
+          StyledButton(onPressed: increaseSugars, child: const Text("+"))
           ],
         ),
       ],
